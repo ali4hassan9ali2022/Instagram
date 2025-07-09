@@ -1,9 +1,4 @@
 import 'package:go_router/go_router.dart';
-import 'package:instagram_app/Features/Auth/Presentation/Views/sign_in_view.dart';
-import 'package:instagram_app/Features/Auth/Presentation/Views/sign_up_view.dart';
-import 'package:instagram_app/Features/Home/Presentation/Views/comment_view.dart';
-import 'package:instagram_app/Features/Layout/Views/main_view.dart';
-import 'package:instagram_app/Features/Splash/Presentation/Views/splash_view.dart';
 
 abstract class AppRouter {
   static const kSignUpView = "/SignUpView";
