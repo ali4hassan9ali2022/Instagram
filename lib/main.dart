@@ -13,12 +13,12 @@ class InstgramApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize:  Size(WidthSizeConfig.kWidth360, HeigthSizeConfig.kHeigth360),
+      designSize: Size(WidthSizeConfig.kWidth360, HeigthSizeConfig.kHeigth360),
       minTextAdapt: true,
       ensureScreenSize: true,
       child: MaterialApp.router(
         routerConfig: AppRouter.router,
-        
+        debugShowCheckedModeBanner: false,
       ),
     );
   }

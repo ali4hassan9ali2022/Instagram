@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:instagram/Core/Utils/app_router.dart';
 import 'package:instagram/Featured/Splash/Presentation/Views/Widgets/custom_icon_animation.dart';
 import 'package:instagram/Featured/Splash/Presentation/Views/Widgets/custom_text_animation.dart';
 
@@ -67,6 +69,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
 
   void navigateToHomeView() {
     Future.delayed(const Duration(seconds: 3), () {
+      GoRouter.of(context).push(AppRouter.kSignInView);
       // Get.to(() => const HomeView(),
       //     transition: Transition.fade, duration: kTransitionDuration);
       // ignore: use_build_context_synchronously
