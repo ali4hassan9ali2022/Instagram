@@ -7,3 +7,6 @@ abstract class HeigthSizeConfig {
   static double kHeigth360 = 690;
   static double kHeigth80 = 80.h;
 }
+abstract class PaddingSizeConfig{
+  static double paddingH16 = 16.h;  
+}
