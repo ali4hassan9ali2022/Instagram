@@ -1,6 +1,8 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:instagram/Core/Utils/app_helper.dart';
+import 'package:instagram/Core/Utils/app_router.dart';
 import 'package:instagram/Core/Utils/app_styles.dart';
 import 'package:instagram/Core/Utils/size_config.dart';
 import 'package:instagram/Core/Utils/strings.dart';
@@ -103,7 +105,7 @@ class LogInViewBody extends StatelessWidget {
                   TextSpan(
                     recognizer: TapGestureRecognizer()
                       ..onTap = () {
-                        // Navigator.pushNamed(context, '/signUp');
+                        GoRouter.of(context).push(AppRouter.kSignUpView);
                       },
                     text: Strings.kSignUp,
                     style: AppStyles.styelsRegular14().copyWith(
