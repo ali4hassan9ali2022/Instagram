@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:instagram/Core/Theme/theme_mode.dart';
 import 'package:instagram/Core/Utils/app_router.dart';
 import 'package:instagram/Core/Utils/size_config.dart';
 
@@ -17,6 +18,8 @@ class InstgramApp extends StatelessWidget {
       minTextAdapt: true,
       ensureScreenSize: true,
       child: MaterialApp.router(
+        theme: lightMode(),
+        darkTheme: darkTheme(),
         routerConfig: AppRouter.router,
         debugShowCheckedModeBanner: false,
       ),
