@@ -22,7 +22,6 @@ abstract class AppStyles {
     return TextStyle(
       fontSize: FontSizeConfig.kFontSize14,
       fontWeight: FontWeight.w400,
-      // color: Color(0xffffffff).withOpacity(0.6),
     );
   }
 

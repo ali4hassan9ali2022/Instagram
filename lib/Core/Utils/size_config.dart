@@ -15,6 +15,7 @@ abstract class HeigthSizeConfig {
   static double kHeigth44 = 44.h;
   static double kHeigth37 = 37.h;
   static double kHeigth41_5 = 41.5.h;
+  static double kHeigth10 = 10.h;
 }
 
 abstract class PaddingSizeConfig {
