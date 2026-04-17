@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram/Core/utils/app_router.dart';
 
 void main() {
   runApp(const InstagramApp());
@@ -9,9 +10,9 @@ class InstagramApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: "Instagram",
-      home: Scaffold(),
+      routerConfig: AppRouter.router,
     );
   }
 }
