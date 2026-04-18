@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:instagram/Core/utils/app_router.dart';
 import 'package:instagram/Features/Splash/Presentation/Views/Widgets/custom_icon_animation.dart';
 import 'package:instagram/Features/Splash/Presentation/Views/Widgets/custom_text_animation.dart';
 
@@ -58,19 +60,16 @@ class _SplashViewBodyState extends State<SplashViewBody>
     scaleAnimation = Tween<double>(begin: 0.5, end: 1.2).animate(
       CurvedAnimation(parent: animationController, curve: Curves.easeInOut),
     );
-    colorAnimation = ColorTween(
-      begin: Colors.grey,
-      end: Colors.deepOrange,
-    ).animate(
-      CurvedAnimation(parent: animationController, curve: Curves.easeIn),
-    );
+    colorAnimation = ColorTween(begin: Colors.grey, end: Colors.deepOrange)
+        .animate(
+          CurvedAnimation(parent: animationController, curve: Curves.easeIn),
+        );
     animationController.forward();
   }
 
   void navigateToHomeView() {
     Future.delayed(const Duration(seconds: 5), () {
-
-      // GoRouter.of(context).pushReplacement(AppRouter.kSignInView);
+      if (mounted) context.pushReplacement(AppRouter.kLogInView);
       // Get.to(() => const HomeView(),
       //     transition: Transition.fade, duration: kTransitionDuration);
       // ignore: use_build_context_synchronously
